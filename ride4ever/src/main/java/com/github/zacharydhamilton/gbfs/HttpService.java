@@ -13,8 +13,8 @@ import com.github.zacharydhamilton.objects.station_status.StationStatus;
 import com.github.zacharydhamilton.objects.system_regions.SystemRegions;
 
 public class HttpService {
-    static String station_information_url = "https://gbfs.lyft.com/gbfs/2.3/bkn/en/station_information.json"; // "https://gbfs.citibikenyc.com/gbfs/en/station_information.json";
-    static String station_status_url = "https://gbfs.lyft.com/gbfs/2.3/bkn/fr/station_status.json"; // "https://gbfs.citibikenyc.com/gbfs/en/station_status.json";
+    static String station_information_url = "https://gbfs.lyft.com/gbfs/2.3/bkn/en/station_information.json";
+    static String station_status_url = "https://gbfs.lyft.com/gbfs/2.3/bkn/en/station_status.json";
     static String system_regions_url = "https://gbfs.lyft.com/gbfs/2.3/bkn/en/system_regions.json";
 
     public static StationInformation getStationInformation() {
@@ -27,7 +27,6 @@ public class HttpService {
                     ObjectMapper mapper = new ObjectMapper();
                     StationInformation stationInformation = mapper.readValue(result, StationInformation.class);
 
-                    // Do something
                     return stationInformation;
                 }
             }
@@ -47,7 +46,6 @@ public class HttpService {
                     ObjectMapper mapper = new ObjectMapper();
                     StationStatus stationStatus = mapper.readValue(result, StationStatus.class);
                     
-                    // Do something
                     return stationStatus;
                 }
             }
@@ -67,7 +65,6 @@ public class HttpService {
                     ObjectMapper mapper = new ObjectMapper();
                     SystemRegions systemRegions = mapper.readValue(result, SystemRegions.class);
                     
-                    // Do something
                     return systemRegions;
                 }
             }
