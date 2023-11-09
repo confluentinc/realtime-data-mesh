@@ -16,7 +16,7 @@
 Since you'll need some secrets through this walkthrough, the first thing you should do is create a file for your secrets. This repo will ignore the file `env.sh`, so using that is a safe bet. Start by cloning the repo, then creating the file with the following command. 
 
 ```bash 
-git clone https://github.com/zacharydhamilton/realtime-data-mesh && cd realtime-data-mesh
+git clone https://github.com/confluentinc/realtime-data-mesh && cd realtime-data-mesh
 ```
 
 ```bash
